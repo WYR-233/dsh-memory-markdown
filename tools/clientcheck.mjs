@@ -41,7 +41,7 @@ context.globalThis = context
 vm.createContext(context)
 vm.runInContext(src, context, { filename: 'lib/client.js' })
 
-ck('client half registers itself through __ModuleLoader__', captured !== null && captured.id === 'dsh-memory-lite')
+ck('client half registers itself through __ModuleLoader__', captured !== null && captured.id === 'dsh-memory-markdown')
 const clientExports = captured.factory((name) => {
   if (name === 'react') return React
   throw new Error('unexpected require: ' + name)
@@ -63,7 +63,7 @@ ck('registers settings.section', slotNames.includes('settings.section'))
 ck('registers conversation.composer.dock (discovery notice)', slotNames.includes('conversation.composer.dock'))
 ck('registers plugins.bundle.config (plugin page card)', slotNames.includes('plugins.bundle.config'))
 const bundleCard = registrations.find((r) => r.decl.name === 'plugins.bundle.config')
-ck('plugin card is keyed by the package name', bundleCard && bundleCard.decl.key === 'dsh-memory-lite')
+ck('plugin card is keyed by the package name', bundleCard && bundleCard.decl.key === 'dsh-memory-markdown')
 
 // ---------- 递归渲染（函数组件真的被调用，depth 兜底防死循环）----------
 const renderNode = (node, depth = 0) => {

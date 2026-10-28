@@ -1,4 +1,4 @@
-# dsh-memory-lite
+# dsh-memory-markdown
 
 Read-only enhancer for a **file-based long-term memory library** (markdown cards kept in git) in
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH).
@@ -34,7 +34,7 @@ Read-only enhancer for a **file-based long-term memory library** (markdown cards
 ## Install
 
 ```bash
-dsh plugin --profile web add github:WYR-233/dsh-memory-lite
+dsh plugin --profile web add github:WYR-233/dsh-memory-markdown
 ```
 
 Then restart that profile.

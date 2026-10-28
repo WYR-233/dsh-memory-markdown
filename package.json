@@ -1,6 +1,6 @@
 {
-  "name": "dsh-memory-lite",
-  "version": "0.4.2",
+  "name": "dsh-memory-markdown",
+  "version": "0.4.3",
   "description": "Read-only enhancer for a file-based (markdown + git) long-term memory library in DeepSeek Harness: memory_find search tool with a zero-dependency built-in engine (external script optional), one-click library creation, in-panel path picking, a governance dashboard, a /memory slash command, a bundled memory-library skill, and a settings page that stays useful with no configuration at all.",
   "type": "module",
   "main": "lib/index.js",
@@ -56,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WYR-233/dsh-memory-lite.git"
+    "url": "git+https://github.com/WYR-233/dsh-memory-markdown.git"
   },
-  "homepage": "https://github.com/WYR-233/dsh-memory-lite"
+  "homepage": "https://github.com/WYR-233/dsh-memory-markdown"
 }
